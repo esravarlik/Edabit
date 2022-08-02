@@ -1,3 +1,4 @@
 # Edabit
 
 Medium
+Hard
