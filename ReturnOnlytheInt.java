@@ -26,3 +26,16 @@ public class Program {
 	  return intArr;
   }
 }
+
+
+//Solution2;
+
+import java.util.Arrays;
+public class Program {
+	public static int[] returnInts(Object[] arr) {
+		return Arrays.stream(arr)
+			.filter(o -> o instanceof Integer)
+			.mapToInt(o -> (int) o)
+			.toArray();
+	}
+}
